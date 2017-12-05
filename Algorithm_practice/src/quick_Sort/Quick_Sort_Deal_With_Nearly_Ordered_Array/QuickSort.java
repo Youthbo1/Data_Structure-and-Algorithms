@@ -61,7 +61,7 @@ public class QuickSort {
         // 可以在1秒之内轻松处理100万数量级的数据
         int N = 1000000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
-        SortTestHelper.testSort("bobo.algo.QuickSort", arr);
+        SortTestHelper.testSort("quick_Sort.Quick_Sort_Deal_With_Nearly_Ordered_Array.QuickSort", arr);
 
         return;
     }
