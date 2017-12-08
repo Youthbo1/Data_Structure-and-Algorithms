@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm_practice/Algorithm_practice.iml" filepath="$PROJECT_DIR$/Algorithm_practice/Algorithm_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binary-Search-Tree/Binary-Search-Tree.iml" filepath="$PROJECT_DIR$/Binary-Search-Tree/Binary-Search-Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heap/Heap.iml" filepath="$PROJECT_DIR$/Heap/Heap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode_algorithm_practice/LeetCode_algorithm_practice.iml" filepath="$PROJECT_DIR$/LeetCode_algorithm_practice/LeetCode_algorithm_practice.iml" />
+    </modules>
+  </component>
+</project>
