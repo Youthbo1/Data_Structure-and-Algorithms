@@ -1,4 +1,4 @@
-package test_12_05.Remove_Duplicates_from_Sorted_Array_26;
+package test_12_05_数组问题.Remove_Duplicates_from_Sorted_Array_26;
 
 /*Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array,

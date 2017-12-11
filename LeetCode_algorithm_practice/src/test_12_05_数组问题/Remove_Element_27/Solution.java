@@ -1,4 +1,4 @@
-package test_12_05.Remove_Element_27;
+package test_12_05_数组问题.Remove_Element_27;
 
 //删除数组中指定的元素，并且返回新的数组长度。
 public class Solution {

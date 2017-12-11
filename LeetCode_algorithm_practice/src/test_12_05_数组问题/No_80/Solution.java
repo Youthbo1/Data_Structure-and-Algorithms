@@ -1,4 +1,4 @@
-package test_12_05.No_80;
+package test_12_05_数组问题.No_80;
 
 /*80. Remove Duplicates from Sorted Array II
 给定一个有序数组，对数组中的元素去重，使得原数组的每个元素最多保留两个。返回去重后数组的长度值。
