@@ -32,6 +32,6 @@ public class Solution {
             cur = next;
         }
 
-        return pre;
+        return pre;//当前
     }
 }
