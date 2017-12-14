@@ -9,3 +9,7 @@ LeetCode_algorithm_practice：刷的题<br>
 12_12<br>
 虽然很累，不过相信一切终有回报，快了，加油！
 <hr>
+12_14<br>
+1月13就回家了，还有一个月，加油！<br>
+把算法刷完，spring刷些demo，开始准备毕设了！<br>
+念念不忘，必有回响！fightingn(*≧▽≦*)n<hr>
