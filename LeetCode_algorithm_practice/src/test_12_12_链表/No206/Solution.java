@@ -65,5 +65,9 @@ public class Solution {
 
         ListNode head=new Solution().create(a,n);
         new Solution().printList(head);
+
+        ListNode head2=new Solution().reverseList(head);
+        new Solution().printList(head2);
+
     }
 }
