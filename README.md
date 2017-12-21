@@ -25,3 +25,6 @@ LeetCode_algorithm_practice：刷的题<br>
 12_19<br>
 老科球衣退役了，哎，我的青春呐
 <hr>
+12_21<br>
+天气变得越来越冷，继续加油吧。
+<hr>
