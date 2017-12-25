@@ -34,7 +34,7 @@ public class Main {
             if( bst.contain("unite") )
                 System.out.println("'unite' : " + bst.search("unite") );
             else
-                System.out.println("No word 'unite' in " + filename);
+                System.out.println("No3 word 'unite' in " + filename);
 
             long endTime = System.currentTimeMillis();
 
@@ -57,7 +57,7 @@ public class Main {
             if( sst.contain("unite") )
                 System.out.println("'unite' : " + sst.search("unite") );
             else
-                System.out.println("No word 'unite' in " + filename);
+                System.out.println("No3 word 'unite' in " + filename);
 
             endTime = System.currentTimeMillis();
             System.out.println("SST , time: " + (endTime - startTime) + "ms.");
@@ -80,7 +80,7 @@ public class Main {
             if( bst.contain("unite") )
                 System.out.println("'unite' : " + bst2.search("unite") );
             else
-                System.out.println("No word 'unite' in " + filename);
+                System.out.println("No3 word 'unite' in " + filename);
 
             endTime = System.currentTimeMillis();
             System.out.println("BST2 , time: " + (endTime - startTime) + "ms.");

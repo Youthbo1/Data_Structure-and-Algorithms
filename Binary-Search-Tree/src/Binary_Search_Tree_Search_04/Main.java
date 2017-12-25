@@ -34,7 +34,7 @@ public class Main {
             if( bst.contain("god") )
                 System.out.println("'god' : " + bst.search("god") );
             else
-                System.out.println("No word 'god' in " + filename);
+                System.out.println("No3 word 'god' in " + filename);
 
             long endTime = System.currentTimeMillis();
             System.out.println("BST , time: " + (endTime - startTime) + "ms.");
@@ -61,7 +61,7 @@ public class Main {
             if( sst.contain("god") )
                 System.out.println("'god' : " + sst.search("god") );
             else
-                System.out.println("No word 'god' in " + filename);
+                System.out.println("No3 word 'god' in " + filename);
 
             endTime = System.currentTimeMillis();
             System.out.println("SST , time: " + (endTime - startTime) + "ms.");
