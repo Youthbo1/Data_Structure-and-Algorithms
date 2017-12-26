@@ -35,3 +35,6 @@ LeetCode_algorithm_practice：刷的题<br>
 12_25<br>
 按计划，一个一个知识点扎实的复习，加油，自己可以变得更好的，只要心存希望，付诸行动！
   <hr>  
+  12_26<br>
+人若活在比较之中，那只会消磨自己的意志，记住一切都会有，不急不躁的一步一步的努力下去，结果自然不用担心。<br>
+自己和自己比，每天进步一点点就足够了！<br>So fear is your friend.Fear is an indicator.

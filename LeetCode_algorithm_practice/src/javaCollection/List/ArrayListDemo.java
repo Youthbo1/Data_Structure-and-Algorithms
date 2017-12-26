@@ -1,4 +1,4 @@
-package javaCollection;
+package javaCollection.List;
 
 import java.util.*;
 
@@ -32,5 +32,8 @@ public class ArrayListDemo
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
+
+
+
     }
 }
