@@ -38,3 +38,8 @@ LeetCode_algorithm_practice：刷的题<br>
   12_26<br>
 人若活在比较之中，那只会消磨自己的意志，记住一切都会有，不急不躁的一步一步的努力下去，结果自然不用担心。<br>
 自己和自己比，每天进步一点点就足够了！<br>So fear is your friend.Fear is an indicator.
+ <hr>  
+2018-1-4<br>
+大学最后一周的课全部结束了，开心，再考一门试就正式告别大学了。
+五味杂陈
+ <hr>  
