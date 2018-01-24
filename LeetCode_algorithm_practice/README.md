@@ -56,3 +56,6 @@ LeetCode_algorithm_practice：刷的题<br>
 1-21<br><br><br>
 坚持健身，学习！成为更好的自己，加油！
  <hr> 
+ 1-24<br><br><br>
+ 周五去上班，开始入手ssm框架了，加油吧，熟悉下实战开发，去北京就更自信了。
+  <hr> 
