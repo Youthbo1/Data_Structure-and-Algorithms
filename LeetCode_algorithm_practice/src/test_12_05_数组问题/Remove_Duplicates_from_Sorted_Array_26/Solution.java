@@ -11,16 +11,16 @@ public class Solution {
             return 0;
         int l = 0;
         for (int r = 1; r < n; r++) {
-            System.out.println("l:"+l+"  --nums[l]:"+nums[l]+"   r:"+r+" nums[r]"+nums[r]);
+          //  System.out.println("l:"+l+"  --nums[l]:"+nums[l]+"   r:"+r+" nums[r]"+nums[r]);
             if (nums[r] != nums[l]) {
                 l++;
-                System.out.println("******************");
-                System.out.println("l:"+l+"  --nums[l]:"+nums[l]+"   r:"+r+" nums[r]"+nums[r]);
+              //  System.out.println("******************");
+            //    System.out.println("l:"+l+"  --nums[l]:"+nums[l]+"   r:"+r+" nums[r]"+nums[r]);
                 nums[l] = nums[r];
-                System.out.println("nums[l]:"+nums[l]+"   nums[r]"+nums[r]);
+            //    System.out.println("nums[l]:"+nums[l]+"   nums[r]"+nums[r]);
             }
         }
-        System.out.println(nums.length);
+        //System.out.println(nums.length);
         return l + 1;
 
     }
