@@ -24,17 +24,19 @@ public class Main {
             BST<String, Integer> bst = new BST<String, Integer>();
             for (String word: words) {
                 Integer res = bst.search(word);
-                if (res == null)
+                if (res == null) {
                     bst.insert(word, new Integer(1));
-                else
+                } else {
                     bst.insert(word, res + 1);
+                }
             }
 
             // 输出圣经中god一词出现的频率
-            if( bst.contain("god") )
-                System.out.println("'god' : " + bst.search("god") );
-            else
+            if( bst.contain("god") ) {
+                System.out.println("'god' : " + bst.search("god"));
+            } else {
                 System.out.println("No3 word 'god' in " + filename);
+            }
 
             long endTime = System.currentTimeMillis();
             System.out.println("BST , time: " + (endTime - startTime) + "ms.");
@@ -51,17 +53,19 @@ public class Main {
             SST<String, Integer> sst = new SST<String, Integer>();
             for (String word: words) {
                 Integer res = sst.search(word);
-                if (res == null)
+                if (res == null) {
                     sst.insert(word, new Integer(1));
-                else
+                } else {
                     sst.insert(word, res + 1);
+                }
             }
 
             // 输出圣经中god一词出现的频率
-            if( sst.contain("god") )
-                System.out.println("'god' : " + sst.search("god") );
-            else
+            if( sst.contain("god") ) {
+                System.out.println("'god' : " + sst.search("god"));
+            } else {
                 System.out.println("No3 word 'god' in " + filename);
+            }
 
             endTime = System.currentTimeMillis();
             System.out.println("SST , time: " + (endTime - startTime) + "ms.");

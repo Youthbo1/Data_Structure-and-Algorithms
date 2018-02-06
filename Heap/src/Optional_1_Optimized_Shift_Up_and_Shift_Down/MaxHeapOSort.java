@@ -15,11 +15,13 @@ public class MaxHeapOSort {
 
         int n = arr.length;
         MaxHeapO<Comparable> maxHeap = new MaxHeapO<Comparable>(n);
-        for( int i = 0 ; i < n ; i ++ )
+        for( int i = 0 ; i < n ; i ++ ) {
             maxHeap.insert(arr[i]);
+        }
 
-        for( int i = n-1 ; i >= 0 ; i -- )
+        for( int i = n-1 ; i >= 0 ; i -- ) {
             arr[i] = maxHeap.extractMax();
+        }
     }
 
     // 测试 MaxHeapOSort

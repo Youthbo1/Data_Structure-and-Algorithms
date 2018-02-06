@@ -20,8 +20,9 @@ public class InsertionSort{
 //                    break;
 
             // 写法2
-            for( int j = i; j > 0 && arr[j].compareTo(arr[j-1]) < 0 ; j--)
-                swap(arr, j, j-1);
+            for( int j = i; j > 0 && arr[j].compareTo(arr[j-1]) < 0 ; j--) {
+                swap(arr, j, j - 1);
+            }
 
         }
     }

@@ -22,16 +22,18 @@ public class Main {
         // 生成 0 到 N-1 一共 N 个数字的数组
         int N = 1000;
         ArrayList<Integer> nums = new ArrayList<Integer>();
-        for( int i = 0 ; i < N ; i ++)
+        for( int i = 0 ; i < N ; i ++) {
             nums.add(i);
+        }
 
         // 将数组中的数组乱序
         shuffle(nums);
 
         // 将这个N个数插入到二叉树中
         BST<Integer, Integer> bst = new BST<Integer, Integer>();
-        for(Integer num: nums)
+        for(Integer num: nums) {
             bst.insert(num, num);
+        }
 
         // 测试前驱算法, 除了数字0没有前驱, 每个数字x的前驱应该为x-1
         for(int i = 0 ; i < N ; i ++) {

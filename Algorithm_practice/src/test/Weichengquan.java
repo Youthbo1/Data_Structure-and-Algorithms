@@ -11,7 +11,9 @@ class weichengquan {//设有ｎ个人依围成一圈，从第１个人开始报�
         //本题目的要点；在遍历完一边数组后，tep是不置零的；
         while (true) {
             if (sd == numS.length - 1)//如果相等，说明出列完毕，跳出循环
+            {
                 break ff;
+            }
             for (int i = 0; i < numS.length; i++) {
                 if (numS[i] != 1 && tep != step) {
                     tep++;
@@ -20,8 +22,9 @@ class weichengquan {//设有ｎ个人依围成一圈，从第１个人开始报�
                     numS[i] = 1;
                     tep = 0;
                     sd = 0;
-                } else
+                } else {
                     sd++;
+                }
             }
 
         }

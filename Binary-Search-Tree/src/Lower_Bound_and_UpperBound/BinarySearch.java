@@ -13,16 +13,19 @@ public class BinarySearch {
     // 否则, 返回arr的元素个数 n
     public static int lower_bound(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = 0, r = arr.length;
         while(l != r){
             int mid = l + (r - l) / 2;
-            if(arr[mid].compareTo(target) < 0)
+            if(arr[mid].compareTo(target) < 0) {
                 l = mid + 1;
-            else    // nums[mid] >= target
+            } else    // nums[mid] >= target
+            {
                 r = mid;
+            }
         }
         return l;
     }
@@ -33,16 +36,19 @@ public class BinarySearch {
     // 否则, 返回arr的元素个数 n
     public static int upper_bound(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = 0, r = arr.length;
         while(l != r){
             int mid = l + (r - l) / 2;
-            if(arr[mid].compareTo(target) <= 0)
+            if(arr[mid].compareTo(target) <= 0) {
                 l = mid + 1;
-            else    // nums[mid] > target
+            } else    // nums[mid] > target
+            {
                 r = mid;
+            }
         }
         return l;
     }

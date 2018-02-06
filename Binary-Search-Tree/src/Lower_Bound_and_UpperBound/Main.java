@@ -10,8 +10,9 @@ public class Main {
 
         Integer[] arr = new Integer[n];
 
-        for(int i = 0 ; i < n ; i ++)
-            arr[i] = (int)(Math.random() * (rangeR - rangeL + 1)) + rangeL;
+        for(int i = 0 ; i < n ; i ++) {
+            arr[i] = (int) (Math.random() * (rangeR - rangeL + 1)) + rangeL;
+        }
         Arrays.sort(arr);
         return arr;
     }
@@ -25,11 +26,13 @@ public class Main {
         /// 我们使用简单的线性查找法来验证我们写的二分查找法
         for (int i = -1; i <= m + 1; i++) {
 
-            if (BinarySearch.lower_bound(arr, i) != LinearSearch.lower_bound(arr, i))
+            if (BinarySearch.lower_bound(arr, i) != LinearSearch.lower_bound(arr, i)) {
                 throw new IllegalArgumentException("lower_bound error!");
+            }
 
-            if (BinarySearch.upper_bound(arr, i) != LinearSearch.upper_bound(arr, i))
+            if (BinarySearch.upper_bound(arr, i) != LinearSearch.upper_bound(arr, i)) {
                 throw new IllegalArgumentException("upper_bound error!");
+            }
         }
 
         System.out.println("test completed:)");

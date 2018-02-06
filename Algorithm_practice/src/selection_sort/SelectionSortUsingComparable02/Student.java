@@ -16,12 +16,14 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student that) {
 
-        if( this.score < that.score )
+        if( this.score < that.score ) {
             return -1;
-        else if( this.score > that.score )
+        } else if( this.score > that.score ) {
             return 1;
-        else // this.score == that.score
+        } else // this.score == that.score
+        {
             return this.name.compareTo(that.name);
+        }
     }
 
     // 定义Student实例的打印输出方式

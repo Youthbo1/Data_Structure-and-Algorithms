@@ -13,12 +13,15 @@ public class LinearSearch {
     // 否则, 返回arr的元素个数 n
     public static int lower_bound(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) >= 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) >= 0) {
                 return i;
+            }
+        }
 
         return arr.length;
     }
@@ -29,12 +32,15 @@ public class LinearSearch {
     // 否则, 返回arr的元素个数 n
     public static int upper_bound(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) > 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) > 0) {
                 return i;
+            }
+        }
 
         return arr.length;
     }

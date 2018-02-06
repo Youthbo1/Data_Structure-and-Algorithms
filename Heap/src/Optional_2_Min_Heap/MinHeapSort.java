@@ -14,11 +14,13 @@ public class MinHeapSort {
 
         int n = arr.length;
         MinHeap<Comparable> minHeap = new MinHeap<Comparable>(n);
-        for( int i = 0 ; i < n ; i ++ )
+        for( int i = 0 ; i < n ; i ++ ) {
             minHeap.insert(arr[i]);
+        }
 
-        for( int i = 0 ; i < n ; i ++ )
+        for( int i = 0 ; i < n ; i ++ ) {
             arr[i] = minHeap.extractMin();
+        }
     }
 
     // 测试 MinHeapSort

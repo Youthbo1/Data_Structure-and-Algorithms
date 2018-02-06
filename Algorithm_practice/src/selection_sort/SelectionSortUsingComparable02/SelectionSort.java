@@ -13,8 +13,11 @@ public class SelectionSort {
             int minIndex = i;
             for( int j = i + 1 ; j < n ; j ++ )
                 // 使用compareTo方法比较两个Comparable对象的大小
-                if( arr[j].compareTo( arr[minIndex] ) < 0 )
+            {
+                if (arr[j].compareTo(arr[minIndex]) < 0) {
                     minIndex = j;
+                }
+            }
 
             swap( arr , i , minIndex);
         }
@@ -62,7 +65,8 @@ public class SelectionSort {
         d[2] = new Student("B",95);
         d[3] = new Student("A",95);
         SelectionSort.sort(d);
-        for( int i = 0 ; i < d.length ; i ++ )
+        for( int i = 0 ; i < d.length ; i ++ ) {
             System.out.println(d[i]);
+        }
     }
 }

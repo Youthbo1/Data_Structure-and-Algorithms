@@ -18,8 +18,9 @@ public class IndexMinHeap<Item extends Comparable> {
         data = (Item[])new Comparable[capacity+1];
         indexes = new int[capacity+1];
         reverse = new int[capacity+1];
-        for( int i = 0 ; i <= capacity ; i ++ )
+        for( int i = 0 ; i <= capacity ; i ++ ) {
             reverse[i] = 0;
+        }
 
         count = 0;
         this.capacity = capacity;
@@ -148,11 +149,13 @@ public class IndexMinHeap<Item extends Comparable> {
 
         while( 2*k <= count ){
             int j = 2*k;
-            if( j+1 <= count && data[indexes[j+1]].compareTo(data[indexes[j]]) < 0 )
-                j ++;
+            if( j+1 <= count && data[indexes[j+1]].compareTo(data[indexes[j]]) < 0 ) {
+                j++;
+            }
 
-            if( data[indexes[k]].compareTo(data[indexes[j]]) <= 0 )
+            if( data[indexes[k]].compareTo(data[indexes[j]]) <= 0 ) {
                 break;
+            }
 
             swapIndexes(k, j);
             k = j;
@@ -164,8 +167,9 @@ public class IndexMinHeap<Item extends Comparable> {
 
         int N = 1000000;
         IndexMinHeap<Integer> indexMinHeap = new IndexMinHeap<Integer>(N);
-        for( int i = 0 ; i < N ; i ++ )
-            indexMinHeap.insert( i , (int)(Math.random()*N) );
+        for( int i = 0 ; i < N ; i ++ ) {
+            indexMinHeap.insert(i, (int) (Math.random() * N));
+        }
 
     }
 }

@@ -13,12 +13,15 @@ public class LinearSearch {
     // 相当于 lower_bound
     public static int firstGreaterOrEqual(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) >= 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) >= 0) {
                 return i;
+            }
+        }
 
         return arr.length;
     }
@@ -29,12 +32,15 @@ public class LinearSearch {
     // 相当于 upper_bound
     public static int firstGreaterThan(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) > 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) > 0) {
                 return i;
+            }
+        }
 
         return arr.length;
     }
@@ -44,12 +50,15 @@ public class LinearSearch {
     // 否则, 返回 -1
     public static int lastLessOrEqual(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) > 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) > 0) {
                 return i - 1;
+            }
+        }
 
         return arr.length - 1;
     }
@@ -59,12 +68,15 @@ public class LinearSearch {
     // 否则, 返回 -1
     public static int lastLessThan(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
-        for(int i = 0 ; i < arr.length ; i ++)
-            if(arr[i].compareTo(target) >= 0)
+        for(int i = 0 ; i < arr.length ; i ++) {
+            if (arr[i].compareTo(target) >= 0) {
                 return i - 1;
+            }
+        }
 
         return arr.length - 1;
     }

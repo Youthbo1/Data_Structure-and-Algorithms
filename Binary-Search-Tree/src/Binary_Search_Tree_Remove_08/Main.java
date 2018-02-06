@@ -29,17 +29,19 @@ public class Main {
 
         // order数组中存放[0...n)的所有元素
         Integer order[] = new Integer[N];
-        for( int i = 0 ; i < N ; i ++ )
+        for( int i = 0 ; i < N ; i ++ ) {
             order[i] = new Integer(i);
+        }
         // 打乱order数组的顺序
         shuffle( order );
 
         // 乱序删除[0...n)范围里的所有元素
-        for( int i = 0 ; i < N ; i ++ )
-            if( bst.contain( order[i] )){
-                bst.remove( order[i] );
-                System.out.println("After remove " + order[i] + " size = " + bst.size() );
+        for( int i = 0 ; i < N ; i ++ ) {
+            if (bst.contain(order[i])) {
+                bst.remove(order[i]);
+                System.out.println("After remove " + order[i] + " size = " + bst.size());
             }
+        }
 
         // 最终整个二分搜索树应该为空
         System.out.println( bst.size() );

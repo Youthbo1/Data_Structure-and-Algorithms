@@ -2,8 +2,9 @@ package test;
 
 public class Test {
     public static int[][] generateMatrix(int n) {
-        if (n == 0)
+        if (n == 0) {
             return new int[0][0];
+        }
 
         int[][] matrix = new int[2*n-1][2*n-1];
         int x = 0;
@@ -13,17 +14,21 @@ public class Test {
         int i = 0, j = 1;
         while (x <= hang && y <= lie) {
             // up lie
-            for (i = y; i <= lie; ++i, j++)
+            for (i = y; i <= lie; ++i, j++) {
                 matrix[x][i] = j;
+            }
             // right column
-            for (i = x + 1; i <= hang; ++i, j++)
+            for (i = x + 1; i <= hang; ++i, j++) {
                 matrix[i][lie] = j;
+            }
             // bottom lie
-            for (i = lie - 1; hang != x && i >= y; --i, j++)
+            for (i = lie - 1; hang != x && i >= y; --i, j++) {
                 matrix[hang][i] = j;
+            }
             // left column
-            for (i = hang - 1; y != lie && i > x; --i, j++)
+            for (i = hang - 1; y != lie && i > x; --i, j++) {
                 matrix[i][y] = j;
+            }
 
             x++;
             y++;
@@ -35,8 +40,9 @@ public class Test {
     public static boolean isT(boolean f){
         if(f){
             return  true;
-        }else
+        }else {
             return false;
+        }
     }
     public static void main(String[] args) {
 //        boolean f = false;

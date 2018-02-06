@@ -19,11 +19,12 @@ public class Selection {
         Comparable v = arr[l];
 
         int j = l; // arr[l+1...j] < v ; arr[j+1...i) > v
-        for( int i = l + 1 ; i <= r ; i ++ )
-            if( arr[i].compareTo(v) < 0 ){
-                j ++;
+        for( int i = l + 1 ; i <= r ; i ++ ) {
+            if (arr[i].compareTo(v) < 0) {
+                j++;
                 swap(arr, j, i);
             }
+        }
 
         swap(arr, l, j);
 
@@ -33,18 +34,23 @@ public class Selection {
     // 求出nums[l...r]范围里第k小的数
     private static Comparable solve(Comparable[] nums, int l, int r, int k){
 
-        if( l == r )
+        if( l == r ) {
             return nums[l];
+        }
 
         // partition之后, nums[p]的正确位置就在索引p上
         int p = partition(nums, l, r);
 
         if( k == p )    // 如果 k == p, 直接返回nums[p]
+        {
             return nums[p];
-        else if( k < p )    // 如果 k < p, 只需要在nums[l...p-1]中找第k小元素即可
-            return solve( nums, l, p-1, k);
-        else // 如果 k > p, 则需要在nums[p+1...r]中找第k小元素
-            return solve( nums, p+1, r, k );
+        } else if( k < p )    // 如果 k < p, 只需要在nums[l...p-1]中找第k小元素即可
+        {
+            return solve(nums, l, p - 1, k);
+        } else // 如果 k > p, 则需要在nums[p+1...r]中找第k小元素
+        {
+            return solve(nums, p + 1, r, k);
+        }
     }
 
     // 寻找nums数组中第k小的元素

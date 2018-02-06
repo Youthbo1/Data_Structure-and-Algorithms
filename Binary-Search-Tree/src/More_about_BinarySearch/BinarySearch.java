@@ -13,16 +13,19 @@ public class BinarySearch {
     // 相当于 lower_bound
     public static int firstGreaterOrEqual(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = 0, r = arr.length;
         while(l != r){
             int mid = l + (r - l) / 2;
-            if(arr[mid].compareTo(target) < 0)
+            if(arr[mid].compareTo(target) < 0) {
                 l = mid + 1;
-            else    // nums[mid] >= target
+            } else    // nums[mid] >= target
+            {
                 r = mid;
+            }
         }
         return l;
     }
@@ -33,16 +36,19 @@ public class BinarySearch {
     // 相当于 upper_bound
     public static int firstGreaterThan(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = 0, r = arr.length;
         while(l != r){
             int mid = l + (r - l) / 2;
-            if(arr[mid].compareTo(target) <= 0)
+            if(arr[mid].compareTo(target) <= 0) {
                 l = mid + 1;
-            else    // nums[mid] > target
+            } else    // nums[mid] > target
+            {
                 r = mid;
+            }
         }
         return l;
     }
@@ -52,16 +58,19 @@ public class BinarySearch {
     // 否则, 返回 -1
     public static int lastLessOrEqual(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = -1, r = arr.length - 1;
         while(l != r){
             int mid = l + (r - l + 1) / 2;
-            if(arr[mid].compareTo(target) > 0)
+            if(arr[mid].compareTo(target) > 0) {
                 r = mid - 1;
-            else    // nums[mid] <= target
+            } else    // nums[mid] <= target
+            {
                 l = mid;
+            }
         }
 
         return l;
@@ -72,16 +81,19 @@ public class BinarySearch {
     // 否则, 返回 -1
     public static int lastLessThan(Comparable[] arr, Comparable target){
 
-        if(arr == null)
+        if(arr == null) {
             throw new IllegalArgumentException("arr can not be null.");
+        }
 
         int l = -1, r = arr.length - 1;
         while(l != r){
             int mid = l + (r - l + 1) / 2;
-            if(arr[mid].compareTo(target) >= 0)
+            if(arr[mid].compareTo(target) >= 0) {
                 r = mid - 1;
-            else    // nums[mid] < target
+            } else    // nums[mid] < target
+            {
                 l = mid;
+            }
         }
 
         return l;
