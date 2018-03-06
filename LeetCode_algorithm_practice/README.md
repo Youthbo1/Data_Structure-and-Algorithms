@@ -70,4 +70,7 @@ LeetCode_algorithm_practice：刷的题<br>
 3-4<br>
 今天做了一件很开心的事，希望善念结善果。
  <hr>
- 
+3-6<br>
+我度他人，佛陀度我。<br>
+是时候更努力提高下自己了.fighting!
+ <hr>
