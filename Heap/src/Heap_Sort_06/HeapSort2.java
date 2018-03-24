@@ -15,8 +15,9 @@ public class HeapSort2 {
 
         int n = arr.length;
         MaxHeap<Comparable> maxHeap = new MaxHeap<Comparable>(arr);
-        for( int i = n-1 ; i >= 0 ; i -- )
+        for( int i = n-1 ; i >= 0 ; i -- ) {
             arr[i] = maxHeap.extractMax();
+        }
     }
 
     // 测试 HeapSort2

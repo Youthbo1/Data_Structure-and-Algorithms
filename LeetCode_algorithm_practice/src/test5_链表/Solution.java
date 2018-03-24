@@ -21,19 +21,22 @@ package test5_链表;
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
 
-        for (int i = 0; i < nums.length; i++)
-            for (int j = 0; j < nums.length; j++)
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {
                     int[] res = {i, j};
                     return res;
                 }
+            }
+        }
 
         throw new IllegalStateException("the input has no solution");
     }
 
     private static void printArr(int[] nums) {
-        for (int num : nums)
+        for (int num : nums) {
             System.out.print(num + " ");
+        }
         System.out.println();
     }
 

@@ -81,8 +81,9 @@ public class SelectionSort {
         d[2] = new Student("B",95);
         d[3] = new Student("A",95);
         insertionSort(d);
-        for( int i = 0 ; i < d.length ; i ++ )
+        for( int i = 0 ; i < d.length ; i ++ ) {
             System.out.println(d[i]);
+        }
     }
 }
 

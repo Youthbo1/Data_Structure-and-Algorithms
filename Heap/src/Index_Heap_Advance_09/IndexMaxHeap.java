@@ -18,8 +18,9 @@ public class IndexMaxHeap<Item extends Comparable> {
         data = (Item[])new Comparable[capacity+1];
         indexes = new int[capacity+1];
         reverse = new int[capacity+1];
-        for( int i = 0 ; i <= capacity ; i ++ )
+        for( int i = 0 ; i <= capacity ; i ++ ) {
             reverse[i] = 0;
+        }
 
         count = 0;
         this.capacity = capacity;
@@ -157,11 +158,13 @@ public class IndexMaxHeap<Item extends Comparable> {
 
         while( 2*k <= count ){
             int j = 2*k;
-            if( j+1 <= count && data[indexes[j+1]].compareTo(data[indexes[j]]) > 0 )
-                j ++;
+            if( j+1 <= count && data[indexes[j+1]].compareTo(data[indexes[j]]) > 0 ) {
+                j++;
+            }
 
-            if( data[indexes[k]].compareTo(data[indexes[j]]) >= 0 )
+            if( data[indexes[k]].compareTo(data[indexes[j]]) >= 0 ) {
                 break;
+            }
 
             swapIndexes(k, j);
             k = j;
@@ -188,12 +191,13 @@ public class IndexMaxHeap<Item extends Comparable> {
         // 在对索引堆中的索引和反向索引进行排序后,
         // 两个数组都应该正好是1...count这count个索引
         boolean res = true;
-        for( int i = 1 ; i <= count ; i ++ )
-            if( copyIndexes[i-1] + 1 != copyIndexes[i] ||
-                    copyReverseIndexes[i-1] + 1 != copyReverseIndexes[i] ){
+        for( int i = 1 ; i <= count ; i ++ ) {
+            if (copyIndexes[i - 1] + 1 != copyIndexes[i] ||
+                    copyReverseIndexes[i - 1] + 1 != copyReverseIndexes[i]) {
                 res = false;
                 break;
             }
+        }
 
         if( !res ){
             System.out.println("Error!");
@@ -208,8 +212,9 @@ public class IndexMaxHeap<Item extends Comparable> {
 
         int N = 1000000;
         IndexMaxHeap<Integer> indexMaxHeap = new IndexMaxHeap<Integer>(N);
-        for( int i = 0 ; i < N ; i ++ )
-            indexMaxHeap.insert( i , (int)(Math.random()*N) );
+        for( int i = 0 ; i < N ; i ++ ) {
+            indexMaxHeap.insert(i, (int) (Math.random() * N));
+        }
         assert indexMaxHeap.testIndexes();
     }
 }

@@ -26,8 +26,9 @@ public class InsertionSort{
             // 写法3
             Comparable e = arr[i];//复制一份 只改变一次值   swap 赋值三次，比较的话 赋值一次
             int j = i;
-            for( ; j > 0 && arr[j-1].compareTo(e) > 0 ; j--)
-                arr[j] = arr[j-1];      //找到合适位置就中止内层循环
+            for( ; j > 0 && arr[j-1].compareTo(e) > 0 ; j--) {
+                arr[j] = arr[j - 1];      //找到合适位置就中止内层循环
+            }
             arr[j] = e;
 
         }

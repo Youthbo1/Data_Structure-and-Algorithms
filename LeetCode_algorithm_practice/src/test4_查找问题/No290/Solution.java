@@ -30,7 +30,9 @@ public class Solution {
         //input check
 
         String[] strs = str.split(" ");
-        if(pattern.length() != strs.length  ) return false;
+        if(pattern.length() != strs.length  ) {
+            return false;
+        }
 
         Map<Character, String> map = new HashMap<>();
         Set<String> unique = new HashSet<>();
@@ -38,9 +40,13 @@ public class Solution {
         for(int i=0; i<pattern.length(); i++) {
             char c = pattern.charAt(i);
             if(map.containsKey(c) ) {
-                if(!map.get(c).equals(strs[i])) return false;
+                if(!map.get(c).equals(strs[i])) {
+                    return false;
+                }
             } else {
-                if(unique.contains(strs[i])) return false;
+                if(unique.contains(strs[i])) {
+                    return false;
+                }
                 map.put(c, strs[i]);
                 unique.add(strs[i]);
             }

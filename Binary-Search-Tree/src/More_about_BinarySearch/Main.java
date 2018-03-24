@@ -10,8 +10,9 @@ public class Main {
 
         Integer[] arr = new Integer[n];
 
-        for(int i = 0 ; i < n ; i ++)
-            arr[i] = (int)(Math.random() * (rangeR - rangeL + 1)) + rangeL;
+        for(int i = 0 ; i < n ; i ++) {
+            arr[i] = (int) (Math.random() * (rangeR - rangeL + 1)) + rangeL;
+        }
         Arrays.sort(arr);
         return arr;
     }
@@ -26,20 +27,24 @@ public class Main {
         for (int i = -1; i <= m + 1; i++) {
 
             if (BinarySearch.firstGreaterOrEqual(arr, i)
-                    != LinearSearch.firstGreaterOrEqual(arr, i))
+                    != LinearSearch.firstGreaterOrEqual(arr, i)) {
                 throw new IllegalArgumentException("firstGreaterOrEqual error! " + i);
+            }
 
             if (BinarySearch.firstGreaterThan(arr, i)
-                    != LinearSearch.firstGreaterThan(arr, i))
+                    != LinearSearch.firstGreaterThan(arr, i)) {
                 throw new IllegalArgumentException("firstGreaterThan error! " + i);
+            }
 
             if (BinarySearch.lastLessOrEqual(arr, i)
-                    != LinearSearch.lastLessOrEqual(arr, i))
+                    != LinearSearch.lastLessOrEqual(arr, i)) {
                 throw new IllegalArgumentException("lastLessOrEqual error! " + i);
+            }
 
             if (BinarySearch.lastLessThan(arr, i)
-                    != LinearSearch.lastLessThan(arr, i))
+                    != LinearSearch.lastLessThan(arr, i)) {
                 throw new IllegalArgumentException("lastLessThan error! " + i);
+            }
         }
 
         System.out.println("test completed:)");

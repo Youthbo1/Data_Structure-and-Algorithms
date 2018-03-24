@@ -14,7 +14,10 @@ public class Solution {
                 c++;
             }
         }
-
+//        for (int i: nums
+//                ) {
+//            System.out.print(i+"--");
+//        }
         return c;
 
     }

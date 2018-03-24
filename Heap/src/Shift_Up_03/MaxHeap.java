@@ -61,8 +61,9 @@ public class MaxHeap<Item extends Comparable> {
         MaxHeap<Integer> maxHeap = new MaxHeap<Integer>(100);
         int N = 50; // 堆中元素个数
         int M = 100; // 堆中元素取值范围[0, M)
-        for( int i = 0 ; i < N ; i ++ )
-            maxHeap.insert( new Integer((int)(Math.random() * M)) );
+        for( int i = 0 ; i < N ; i ++ ) {
+            maxHeap.insert(new Integer((int) (Math.random() * M)));
+        }
         System.out.println(maxHeap.size());
 
     }

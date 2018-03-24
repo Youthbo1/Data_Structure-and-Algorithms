@@ -48,8 +48,9 @@ public class MergeSort{
         sort(arr, aux, mid + 1, r);
         // 对于arr[mid] <= arr[mid+1]的情况,不进行merge
         // 对于近乎有序的数组非常有效,但是对于一般情况,有一定的性能损失
-        if( arr[mid].compareTo(arr[mid+1]) > 0 )
+        if( arr[mid].compareTo(arr[mid+1]) > 0 ) {
             merge(arr, aux, l, mid, r);
+        }
     }
 
     public static void sort(Comparable[] arr){

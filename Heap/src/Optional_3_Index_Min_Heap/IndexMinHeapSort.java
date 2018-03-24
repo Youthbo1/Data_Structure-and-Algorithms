@@ -13,11 +13,13 @@ public class IndexMinHeapSort {
         int n = arr.length;
 
         IndexMinHeap<Comparable> indexMinHeap = new IndexMinHeap<Comparable>(n);
-        for( int i = 0 ; i < n ; i ++ )
-            indexMinHeap.insert( i , arr[i] );
+        for( int i = 0 ; i < n ; i ++ ) {
+            indexMinHeap.insert(i, arr[i]);
+        }
 
-        for( int i = 0 ; i < n ; i ++ )
+        for( int i = 0 ; i < n ; i ++ ) {
             arr[i] = indexMinHeap.extractMin();
+        }
     }
 
     // 测试 Index Min Heap Sort

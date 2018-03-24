@@ -63,8 +63,9 @@ public class SST<Key extends Comparable<Key>, Value> {
 
         Node node = head;
         while( node != null ){
-            if( key.compareTo(node.key) == 0 )
+            if( key.compareTo(node.key) == 0 ) {
                 return true;
+            }
             node = node.next;
         }
         return false;
@@ -75,8 +76,9 @@ public class SST<Key extends Comparable<Key>, Value> {
 
         Node node = head;
         while( node != null ){
-            if( key.compareTo(node.key) == 0 )
+            if( key.compareTo(node.key) == 0 ) {
                 return node.value;
+            }
             node = node.next;
         }
         return null;
@@ -85,8 +87,9 @@ public class SST<Key extends Comparable<Key>, Value> {
     // 在顺序查找表中删除(key,value)所对应的节点
     public void remove(Key key){
 
-        if(head == null)
+        if(head == null) {
             return;
+        }
 
         // 如果待删除的节点就是头结点, 则需要特殊处理
         // 思考: 对于链表, 可以使用什么技术不去特殊处理头结点的特殊情况?
@@ -100,8 +103,9 @@ public class SST<Key extends Comparable<Key>, Value> {
         }
 
         Node node = head;
-        while( node.next != null && node.next.key.compareTo(key) != 0 )
+        while( node.next != null && node.next.key.compareTo(key) != 0 ) {
             node = node.next;
+        }
 
         if( node.next != null ){
             Node delNode = node.next;

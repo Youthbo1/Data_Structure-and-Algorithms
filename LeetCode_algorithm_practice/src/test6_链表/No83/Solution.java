@@ -1,6 +1,6 @@
 package test6_链表.No83;
 
-import data_structure.*;
+import data_structure.listNode.ListNode;
 
 /**
  * \Date: 2017/12/14
@@ -13,8 +13,9 @@ import data_structure.*;
  */
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null || head.next == null)
+        if (head == null || head.next == null) {
             return head;
+        }
 
         ListNode pre = head;
         ListNode cur = head.next;

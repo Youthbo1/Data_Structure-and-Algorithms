@@ -8,9 +8,11 @@ public class Solution {
 
     //时间 O(n)
     //空间 O(n)
-    public static void moveZeroes(int[] nums) {
+    public void moveZeroes(int[] nums) {
         int[] nonZero=new int[nums.length];
 
+        //扫一遍 把非0存进数组  然后赋值给原数组
+        //i扫原数组  j扫 非零数组
         for (int i = 0,j=0; i <nums.length ; i++) {
             if (nums[i]!=0) {
                 nonZero[j] = nums[i];
@@ -29,14 +31,7 @@ public class Solution {
 
     public static void main(String[] args) {
         int[] nums={0,1,0,3,12};
-         Solution.moveZeroes(nums);
+       // Solution.moveZeroes(nums);
 
-//        for (int i = 0; i <nums.length ; i++) {
-//            System.out.print(nums[i]+"  ");
-//        }
-        for (int a: nums
-             ) {
-            System.out.print(a+" ");
-        }
     }
 }

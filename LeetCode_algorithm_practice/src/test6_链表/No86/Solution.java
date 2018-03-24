@@ -1,6 +1,6 @@
 package test6_链表.No86;
 
-import data_structure.ListNode;
+import data_structure.listNode.ListNode;
 
 /**
  * \Date: 2017/12/14
@@ -12,8 +12,9 @@ import data_structure.ListNode;
  */
 public class Solution {
     public ListNode partition(ListNode head, int x) {
-        if (head == null || head.next == null)
+        if (head == null || head.next == null) {
             return head;
+        }
         ListNode little_start = new ListNode(0);
         ListNode little_end = little_start;
         ListNode big_start = new ListNode(0);
@@ -37,8 +38,9 @@ public class Solution {
             big_end.next = null;
             little_end.next = big_start;
             return little_start;
-        } else
+        } else {
             return big_start;
+        }
 
     }
 }

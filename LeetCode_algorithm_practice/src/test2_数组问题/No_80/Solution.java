@@ -8,6 +8,7 @@ package test2_数组问题.No_80;
 */
 
 public class Solution {
+
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) {
             return 0;
@@ -32,4 +33,6 @@ public class Solution {
         }
         return sum;
     }
+
 }
+

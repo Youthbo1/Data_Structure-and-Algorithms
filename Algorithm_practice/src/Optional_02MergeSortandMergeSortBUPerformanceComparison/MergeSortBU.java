@@ -35,10 +35,13 @@ public class MergeSortBU{
 
         int n = arr.length;
 
-        for (int sz = 1; sz < n; sz *= 2)
-            for (int i = 0; i < n - sz; i += sz+sz)
-                // 对 arr[i...i+sz-1] 和 arr[i+sz...i+2*sz-1] 进行归并
-                merge(arr, i, i+sz-1, Math.min(i+sz+sz-1,n-1));
+        for (int sz = 1; sz < n; sz *= 2) {
+            for (int i = 0; i < n - sz; i += sz + sz)
+            // 对 arr[i...i+sz-1] 和 arr[i+sz...i+2*sz-1] 进行归并
+            {
+                merge(arr, i, i + sz - 1, Math.min(i + sz + sz - 1, n - 1));
+            }
+        }
     }
 
     // 测试 MergeSort BU

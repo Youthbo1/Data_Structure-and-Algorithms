@@ -52,8 +52,9 @@ public class Cat {
 	@Override
 	public boolean equals(Object obj) {
 		//判断对象是否相等，相等则返回true，不用继续比较属性了
-		if(this==obj)
-			return true;
+		if(this==obj) {
+            return true;
+        }
 		//判断obj是否是Cat类的对象
 		if(obj.getClass()==Cat.class){
 			Cat cat=(Cat)obj;

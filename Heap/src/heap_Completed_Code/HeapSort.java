@@ -15,8 +15,9 @@ public class HeapSort {
         // 注意，此时我们的堆是从0开始索引的
         // 从(最后一个元素的索引-1)/2开始
         // 最后一个元素的索引 = n-1
-        for( int i = (n-1-1)/2 ; i >= 0 ; i -- )
+        for( int i = (n-1-1)/2 ; i >= 0 ; i -- ) {
             shiftDown(arr, n, i);  //把数组构建成堆
+        }
 
         for( int i = n-1; i > 0 ; i-- ){
             swap( arr, 0, i);
@@ -38,11 +39,13 @@ public class HeapSort {
         Comparable e = arr[k];
         while( 2*k+1 < n ){
             int j = 2*k+1;
-            if( j+1 < n && arr[j+1].compareTo(arr[j]) > 0 )
+            if( j+1 < n && arr[j+1].compareTo(arr[j]) > 0 ) {
                 j += 1;
+            }
 
-            if( e.compareTo(arr[j]) >= 0 )
+            if( e.compareTo(arr[j]) >= 0 ) {
                 break;
+            }
 
             arr[k] = arr[j];
             k = j;

@@ -10,10 +10,12 @@ public class Solution3 {
         //[k,i]为0
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
-                if(i!=k)
+                if(i!=k) {
                     swap(nums, k++, i);
-                else //i==k  全0
+                } else //i==k  全0
+                {
                     k++;
+                }
             }
         }
 

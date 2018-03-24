@@ -1,6 +1,4 @@
-package data_structure;
-
-
+package data_structure.listNode;
 
 
 public class MyLinkedList {
@@ -57,8 +55,9 @@ public class MyLinkedList {
     }
 
     public ListNode create(int[] arr, int n) {
-        if (n == 0)
+        if (n == 0) {
             return null;
+        }
 
         ListNode head = new ListNode(arr[0]);
 

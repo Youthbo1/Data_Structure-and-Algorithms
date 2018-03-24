@@ -47,8 +47,9 @@ public class InversionCount{
     // 思考: 归并排序的优化可否用于求逆序数对的算法? :)
     private static long solve(Comparable[] arr, int l, int r) {
 
-        if (l >= r)
+        if (l >= r) {
             return 0L;
+        }
 
         int mid = l + (r-l)/2;
         // 求出 arr[l...mid] 范围的逆序数

@@ -36,8 +36,9 @@ public class Solution {
     }
 
     public ListNode create(int[] arr,int n ){
-        if(n==0)
+        if(n==0) {
             return null;
+        }
 
         ListNode head=new ListNode(arr[0]);
 

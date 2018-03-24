@@ -9,9 +9,9 @@ public class Solution1 {
         int zero = -1;  //[0...zero]==0
         int two = nums.length;  //[two....n-1]==2
         for (int i = 0; i < two; ) {
-            if(nums[i]==1)
+            if(nums[i]==1) {
                 i++;
-            else if (nums[i]==2) {
+            } else if (nums[i]==2) {
                 two--;
                 swap(nums,i,two);
             }else{// ==0

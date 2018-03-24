@@ -34,8 +34,9 @@ public class MergeSort{
     // 递归使用归并排序,对arr[l...r]的范围进行排序
     private static void sort(Comparable[] arr, int l, int r) {
 
-        if (l >= r)
+        if (l >= r) {
             return;
+        }
 
         int mid = (l+r)/2;
        //int mid = (r-l)/2+l;

@@ -13,8 +13,9 @@ public class Solution2 {
     public int[] twoSum(int[] nums, int target) {
 
         HashMap<Integer, Integer> record = new HashMap<Integer, Integer>();
-        for(int i = 0 ; i < nums.length ; i ++)
+        for(int i = 0 ; i < nums.length ; i ++) {
             record.put(nums[i], i);
+        }
 
         for(int i = 0 ; i < nums.length; i ++){
 
@@ -31,8 +32,9 @@ public class Solution2 {
     }
 
     private static void printArr(int[] nums){
-        for(int num: nums)
+        for(int num: nums) {
             System.out.print(num + " ");
+        }
         System.out.println();
     }
 

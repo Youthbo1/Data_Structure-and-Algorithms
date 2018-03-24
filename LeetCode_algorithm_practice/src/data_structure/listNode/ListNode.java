@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.listNode;
 
 /**
  * \Date: 2017/12/14

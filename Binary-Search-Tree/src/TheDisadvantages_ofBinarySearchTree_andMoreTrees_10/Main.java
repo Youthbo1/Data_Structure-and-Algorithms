@@ -24,17 +24,19 @@ public class Main {
             BST<String, Integer> bst = new BST<String, Integer>();
             for (String word: words) {
                 Integer res = bst.search(word);
-                if (res == null)
+                if (res == null) {
                     bst.insert(word, new Integer(1));
-                else
+                } else {
                     bst.insert(word, res + 1);
+                }
             }
 
             // 我们查看unite一词的词频
-            if( bst.contain("unite") )
-                System.out.println("'unite' : " + bst.search("unite") );
-            else
+            if( bst.contain("unite") ) {
+                System.out.println("'unite' : " + bst.search("unite"));
+            } else {
                 System.out.println("No3 word 'unite' in " + filename);
+            }
 
             long endTime = System.currentTimeMillis();
 
@@ -47,17 +49,19 @@ public class Main {
             SST<String, Integer> sst = new SST<String, Integer>();
             for (String word: words) {
                 Integer res = sst.search(word);
-                if (res == null)
+                if (res == null) {
                     sst.insert(word, new Integer(1));
-                else
+                } else {
                     sst.insert(word, res + 1);
+                }
             }
 
             // 我们查看unite一词的词频
-            if( sst.contain("unite") )
-                System.out.println("'unite' : " + sst.search("unite") );
-            else
+            if( sst.contain("unite") ) {
+                System.out.println("'unite' : " + sst.search("unite"));
+            } else {
                 System.out.println("No3 word 'unite' in " + filename);
+            }
 
             endTime = System.currentTimeMillis();
             System.out.println("SST , time: " + (endTime - startTime) + "ms.");
@@ -70,17 +74,19 @@ public class Main {
             Collections.sort(words);
             for (String word: words) {
                 Integer res = bst2.search(word);
-                if (res == null)
+                if (res == null) {
                     bst2.insert(word, new Integer(1));
-                else
+                } else {
                     bst2.insert(word, res + 1);
+                }
             }
 
             // 我们查看unite一词的词频
-            if( bst.contain("unite") )
-                System.out.println("'unite' : " + bst2.search("unite") );
-            else
+            if( bst.contain("unite") ) {
+                System.out.println("'unite' : " + bst2.search("unite"));
+            } else {
                 System.out.println("No3 word 'unite' in " + filename);
+            }
 
             endTime = System.currentTimeMillis();
             System.out.println("BST2 , time: " + (endTime - startTime) + "ms.");

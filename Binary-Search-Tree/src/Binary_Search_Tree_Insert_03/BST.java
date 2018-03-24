@@ -55,12 +55,14 @@ public class BST<Key extends Comparable<Key>, Value> {
             return new Node(key, value);
         }
 
-        if( key.compareTo(node.key) == 0 )
+        if( key.compareTo(node.key) == 0 ) {
             node.value = value;
-        else if( key.compareTo(node.key) < 0 )
-            node.left = insert( node.left , key, value);
-        else    // key > node->key
-            node.right = insert( node.right, key, value);
+        } else if( key.compareTo(node.key) < 0 ) {
+            node.left = insert(node.left, key, value);
+        } else    // key > node->key
+        {
+            node.right = insert(node.right, key, value);
+        }
 
         return node;
     }

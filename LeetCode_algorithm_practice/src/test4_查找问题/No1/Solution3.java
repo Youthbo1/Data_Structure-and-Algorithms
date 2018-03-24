@@ -28,8 +28,9 @@ public class Solution3 {
     }
 
     private static void printArr(int[] nums){
-        for(int num: nums)
+        for(int num: nums) {
             System.out.print(num + " ");
+        }
         System.out.println();
     }
 
