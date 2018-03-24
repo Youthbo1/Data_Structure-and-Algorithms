@@ -18,7 +18,15 @@ public class Solution {
 //                ) {
 //            System.out.print(i+"--");
 //        }
-        return c;
 
+
+
+        for (int i = 0; i <nums.length ; i++) {
+            if(nums[i]!=val){
+                nums[c++]=nums[i];
+            }
+        }
+
+        return c;
     }
 }

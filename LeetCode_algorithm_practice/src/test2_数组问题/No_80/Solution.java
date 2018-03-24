@@ -18,21 +18,20 @@ public class Solution {
         int sum = 1, cnt = 1, pre = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            if (pre == nums[i]) {
-                cnt++;
+            if (pre == nums[i]) {//i==i-1
+                cnt++;   //++
                 if (cnt <= 2) {
-                    sum++;
-                    nums[sum-1] = nums[i];
+
+                    nums[sum++] = nums[i];
                 }
             } else {//!=
                 pre = nums[i];
                 cnt = 1;
-                sum++;
-                nums[sum - 1] = nums[i];
+
+                nums[sum ++] = nums[i];
             }
         }
         return sum;
     }
-
 }
 
