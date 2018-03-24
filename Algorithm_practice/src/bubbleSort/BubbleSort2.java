@@ -30,7 +30,7 @@ public class BubbleSort2 {
         arr[i] = arr[j];
         arr[j] = t;
     }
-//    public static void main(String[] args) {
+//    public static_ void main(String[] args) {
 //        Comparable[] a={9,10,8,7,6};
 //        sort(a);
 //        for (Comparable s:a) {

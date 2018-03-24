@@ -1,7 +1,6 @@
 package bubbleSort;
 
-import java.util.*;
-
+//O（n2)
 public class SelectionSort{
 
     // 我们的算法类不允许产生任何实例
