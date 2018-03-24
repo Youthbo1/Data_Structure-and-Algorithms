@@ -1,6 +1,5 @@
 package practice;
 
-import test1.Move_Zeroes_283.Solution;
 
 /**
  * \Date: 2018/3/24
@@ -28,7 +27,7 @@ public class Solution283 {
     }
     public static void main(String[] args) {
         int[] nums={0,1,0,3,12};
-        Solution.moveZeroes(nums);
+        Solution283.moveZeroes(nums);
 
         for (int a: nums
                 ) {
