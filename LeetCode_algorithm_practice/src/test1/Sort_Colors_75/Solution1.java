@@ -47,7 +47,6 @@ public class Solution1 {
                 swap1(nums,zero,i);
                 i++;
             }
-
         }
     }
 
