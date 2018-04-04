@@ -10,7 +10,7 @@ public class Solution {
 
         int[] count = {0, 0, 0};//存放0 1 2元素频率
         for (int i = 0; i < nums.length; i++) {
-            assert (nums[i] >= 0 && nums[i] <= 2);
+            assert (nums[i] >= 0 && nums[i] <= 2);//防止数组越界
             count[nums[i]]++;
         }
 
@@ -22,6 +22,31 @@ public class Solution {
             nums[index++]=1;
         }
         for (int i = 0; i <count[2] ; i++) {
+            nums[index++]=2;
+        }
+
+    }
+
+
+    public void sortColors1(int[] nums) {
+
+        //o(1)
+
+        int[] c={0,0,0};
+
+        for (int i = 0; i <nums.length ; i++) {
+            assert (nums[i]>=0&&nums[i]<=2);
+            c[nums[i]]++;
+        }
+
+        int index=0;
+        for (int i = 0; i <c[0] ; i++) {
+            nums[index++]=0;
+        }
+        for (int i = 0; i <c[1] ; i++) {
+            nums[index++]=1;
+        }
+        for (int i = 0; i <c[2] ; i++) {
             nums[index++]=2;
         }
 

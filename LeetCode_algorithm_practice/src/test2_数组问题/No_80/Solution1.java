@@ -12,12 +12,12 @@ public class Solution1 {
             return nums.length;
         }
 
-        int slow = 2;
-        for(int fast = 2; fast < nums.length; fast++) {
-            if(nums[fast] != nums[slow-2]) {
-                nums[slow++] = nums[fast];
+        int k= 2;
+        for(int i = 2; i < nums.length; i++) {
+            if(nums[i] != nums[k-2]) {
+                nums[k++] = nums[i];
             }
         }
-        return slow;
+        return k;
     }
 }

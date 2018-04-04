@@ -25,9 +25,28 @@ public class BinarySearch {
         return -1;
     }
 
+    public static int binarySearch1(Comparable[] arr,int n,Comparable target ){
+        int l=0,r=n;  //[l,  r)zhao
+
+        while (l<r) {    //l=r
+
+            int mid=(r+l)/2;
+            if (arr[mid].compareTo(target)==0){
+                return mid;
+            }else if(target.compareTo(arr[mid])>0){ //[mid+1,  r)
+                l=mid+1;
+            }else {
+                r=mid;   //[l,mid)
+            }
+        }
+
+        return  -1;
+    }
     public static void main(String[] args) {
         Comparable[] n={0,1,2,4,5,8,9,235};
-        System.out.println(binarySearch(n,n.length,4));
+        System.out.println(binarySearch1(n,n.length,4));
 
     }
+
+
 }

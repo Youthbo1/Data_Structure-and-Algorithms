@@ -33,5 +33,33 @@ public class Solution {
         }
         return sum;
     }
+
+
+    public int removeDuplicates1(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        //k 对新数组长度计数  cnt对重复元素计数   pre存前一个
+        int k = 1, cnt = 1, pre = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+
+            if(nums[i]==pre){
+                cnt++;
+                if (cnt<3){
+                    nums[k]=nums[i];
+                    k++;
+                }
+            }else {//!=
+                cnt=1;
+                pre=nums[i];
+
+                nums[k]=nums[i];
+                k++;
+            }
+        }
+        return k;
+    }
 }
 

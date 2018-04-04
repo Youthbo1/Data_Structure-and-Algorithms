@@ -6,7 +6,7 @@ package test2_数组问题.Remove_Element_27;
 返回2，且nums中前两个元素为2
 */
 public class Solution {
-    public int removeElement(int[] nums, int val) {
+    public static  int removeElement(int[] nums, int val) {
         int c = 0;//[0,c]里没有val
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
@@ -14,19 +14,26 @@ public class Solution {
                 c++;
             }
         }
-//        for (int i: nums
-//                ) {
-//            System.out.print(i+"--");
+        for (int i: nums
+                ) {
+            System.out.print(i+"--");
+        }
+        System.out.println();
+
+
+
+//        for (int i = 0; i <nums.length ; i++) {
+//            if(nums[i]!=val){
+//                nums[c++]=nums[i];
+//            }
 //        }
 
-
-
-        for (int i = 0; i <nums.length ; i++) {
-            if(nums[i]!=val){
-                nums[c++]=nums[i];
-            }
-        }
-
         return c;
+    }
+
+    public static void main(String[] args) {
+        int[] nums={3, 2, 2, 3};
+
+        System.out.println(Solution.removeElement(nums,3));
     }
 }
