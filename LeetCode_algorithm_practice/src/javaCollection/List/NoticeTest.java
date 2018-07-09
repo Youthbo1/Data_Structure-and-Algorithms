@@ -22,9 +22,14 @@ public class NoticeTest {
         arrayList.add(notice2);
         arrayList.add(notice3);
 
-        for (int i = 0; i < arrayList.size(); i++) {
-            Notice notice=arrayList.get(i);
-            System.out.println(i+1+":"+notice.getTitle());
+
+//        for (int i = 0; i < arrayList.size(); i++) {
+//
+//        }
+        for (Notice n :
+                arrayList) {
+//            Notice notice=arrayList.get(i);
+            System.out.println(1+":"+n.getTitle());
 
         }
 
