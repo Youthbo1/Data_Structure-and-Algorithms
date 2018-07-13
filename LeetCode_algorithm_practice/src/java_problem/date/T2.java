@@ -13,7 +13,7 @@ public class T2 {
 
 //1.字符串转日期：
         SimpleDateFormat sdf  =   new SimpleDateFormat( "yyyy/MM/dd" );
-        Date date1=sdf.parse("2018/07/13");
+        Date date1=sdf.parse("2018/07/12");
         System.out.println(date1);
 //2.日期转字符串
         String datestr = sdf.format( new  Date());
@@ -25,5 +25,11 @@ public class T2 {
 
         SimpleDateFormat parser = new SimpleDateFormat("EEEE, MMMM dd, yyyy");
         SimpleDateFormat formatter = new SimpleDateFormat("EEE. MM/dd");
+
+
+
+        long end = date.getTime();
+        long start = date1.getTime();
+        System.out.println((end-start)/ (60* 60 * 1000));
     }
 }
