@@ -1,12 +1,20 @@
 package javaCollection;
 
-public class User {
+public class User implements Comparable{
     private String name;
     private String pwd;
 
     public User(String name, String pwd) {
         this.name = name;
         this.pwd = pwd;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                '}';
     }
 
     public String getName() {
@@ -24,6 +32,11 @@ public class User {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
 

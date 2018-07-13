@@ -10,7 +10,7 @@ public class Solution {
     //空间 O(n)
     public void moveZeroes(int[] nums) {
         int[] nonZero=new int[nums.length];
-
+        System.out.println("0nonZero："+nonZero.length);
         //扫一遍 把非0存进数组  然后赋值给原数组
         //i扫原数组  j扫 非零数组
         for (int i = 0,j=0; i <nums.length ; i++) {
@@ -29,9 +29,39 @@ public class Solution {
 
     }
 
+    public static void test(int[] nums){
+        int[] nonZero=new int[nums.length];
+        System.out.println("0nonZero："+nonZero.length);
+        for (int i = 0,j=0; i <nums.length ; i++) {
+            if(nums[i]!=0){
+                nonZero[j++]=nums[i];
+
+            }
+
+        }
+        System.out.println("1nonZero："+nonZero.length);
+        for (int i = 0; i <nonZero.length ; i++) {
+            nums[i]=nonZero[i];
+        }
+        System.out.println("nonZero："+nonZero.length);
+        for (int i = nonZero.length; i <nums.length ; i++) {
+
+            nums[i]=0;
+        }
+    }
+
     public static void main(String[] args) {
         int[] nums={0,1,0,3,12};
-       // Solution.moveZeroes(nums);
+        Solution.test(nums);
 
+        for (int n:nums
+             ) {
+            System.out.println(n);
+
+        }
+//        System.out.println(nums);
+//        int[] a=new int[nums.length];
+//        a[0]=1;a[1]=2;
+//        System.out.println(a.length);
     }
 }
