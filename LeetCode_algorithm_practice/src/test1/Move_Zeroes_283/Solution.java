@@ -52,16 +52,32 @@ public class Solution {
 
     public static void main(String[] args) {
         int[] nums={0,1,0,3,12};
-        Solution.test(nums);
+        Solution.moveZeroes2(nums);
 
         for (int n:nums
              ) {
-            System.out.println(n);
-
+            System.out.print(n+" ");
         }
 //        System.out.println(nums);
 //        int[] a=new int[nums.length];
 //        a[0]=1;a[1]=2;
 //        System.out.println(a.length);
+    }
+
+    public static void moveZeroes2(int[] nums) {
+        int[] nonZero=new int[nums.length];
+
+        for (int i = 0,j=0; i <nums.length ; i++) {
+            if(nums[i]!=0){
+                nonZero[j++]=nums[i];
+            }
+        }
+        for (int i = 0; i <nonZero.length ; i++) {
+            nums[i]=nonZero[i];
+        }
+        for (int i = nonZero.length; i <nums.length ; i++) {
+
+            nums[i]=0;
+        }
     }
 }

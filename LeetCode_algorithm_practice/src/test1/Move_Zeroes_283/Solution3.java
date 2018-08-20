@@ -29,10 +29,24 @@ public class Solution3 {
 
     public static void main(String[] args) {
         int[] nums={0,0,0,3,12};
-        Solution3.moveZeroes(nums);
+        Solution3.moveZeroes1(nums);
         for (int a:nums
              ) {
             System.out.print(a+" ");
+        }
+    }
+    public static void moveZeroes1(int[] nums) {
+        int k=0;
+
+        for (int i = 0; i <nums.length ; i++) {
+            if (nums[i] != 0) {
+                if (k != i) {
+                    swap(nums, k++, i);
+                } else {
+                    k++;
+                }
+
+            }
         }
     }
 }
