@@ -2,7 +2,9 @@ package test1.Sort_Colors_75;
 
 /*给定一个包含红，白，蓝且长度为n的数组，将数组元素进行分类使同颜色的元素相邻，
 并按照红、白、蓝的顺序进行排序。
-我们可以使用整数0，1和2分别代表红，白，蓝。*/
+我们可以使用整数0，1和2分别代表红，白，蓝。
+计数排序
+*/
 public class Solution {
     public void sortColors(int[] nums) {
 
