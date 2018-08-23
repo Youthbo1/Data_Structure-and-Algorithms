@@ -19,7 +19,7 @@ public class InsertionSort{
 //                else
 //                    break;
 
-            // 写法2
+            // 写法2   提前终止
             for( int j = i; j > 0 && arr[j].compareTo(arr[j-1]) < 0 ; j--) {
                 swap(arr, j, j - 1);
             }

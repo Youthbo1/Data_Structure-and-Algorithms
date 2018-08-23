@@ -10,7 +10,7 @@ public class Test {
     public static void main(String[] args) {
         int[] nums={2,2,1,1,0,0,1};
 
-        new Solution4_13().sortColors(nums);
+        new Solution1().sortColors2(nums);
 
         for (int n:nums
              ) {

@@ -20,9 +20,7 @@ public class Solution1 {
                 swap(nums,i,zero);
                 i++;
             }
-
         }
-
     }
     private  void swap(int[] nums, int a, int b) {
         int temp = nums[b] ;
@@ -54,5 +52,24 @@ public class Solution1 {
         int t=n[a];
         n[a]=n[b];
         n[b]=t;
+    }
+
+    public void sortColors2(int[] nums) {
+        int zero = -1;//[0...zero]==0
+        int two = nums.length;  //[two....n-1]==2 .1
+
+        for (int i = 0; i <two ; ) {
+            if(nums[i]==1){
+                i++;
+            }else if(nums[i]==2){
+                two--;
+                swap(nums,i,two);
+            }else {
+                assert (nums[i]==0);
+                zero++;
+                swap(nums,i,zero);
+                i++;
+            }
+        }
     }
 }

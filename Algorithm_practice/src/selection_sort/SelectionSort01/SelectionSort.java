@@ -1,5 +1,7 @@
 package selection_sort.SelectionSort01;
-
+/*
+O（n*2）
+ */
 public class SelectionSort {
 
     // 我们的算法类不允许产生任何实例

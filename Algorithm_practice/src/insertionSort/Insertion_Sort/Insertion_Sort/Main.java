@@ -14,8 +14,8 @@ public class Main {
         Integer[] arr1 = SortTestHelper.generateRandomArray(N, 0, N);
         Integer[] arr2 = Arrays.copyOf(arr1, arr1.length);
 
-        SortTestHelper.testSort("bobo.algo.SelectionSort", arr1);
-        SortTestHelper.testSort("bobo.algo.InsertionSort", arr2);
+        SortTestHelper.testSort("insertionSort.Insertion_Sort.Insertion_Sort.SelectionSort", arr1);
+        SortTestHelper.testSort("insertionSort.Insertion_Sort.Insertion_Sort.InsertionSort", arr2);
 
         return;
     }
